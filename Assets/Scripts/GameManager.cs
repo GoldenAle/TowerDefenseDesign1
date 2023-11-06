@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         foreach(string wavePart in EnemyWavesInLevel[CurrentEnemyWave].WaveKey)
         {
            var enemyWave = SpawnObject(wavePart,EnemyStartingPos.position);
-            enemyWave.GetComponent<EnemyWave>().MovementDirection = this.transform.position - EnemyStartingPos.position;
+            enemyWave.GetComponent<EnemyWave>().movementDirection = this.transform.position - EnemyStartingPos.position;
         }
         CurrentEnemyWave++;
         if (CurrentEnemyWave >= EnemyWavesInLevel.Count)
