@@ -38,7 +38,6 @@ public class EnemyBase : MonoBehaviour
     void Update()
     {
         transform.Translate(EnemyData.MoveSpeed * Time.deltaTime * EnemyData.MovementDirection);
-  
     }
 
     void OnDisable()

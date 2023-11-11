@@ -909,12 +909,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601641957}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.6, y: 19.5, z: -2.27}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.6, y: 14.335982, z: -2.27}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2131613551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1022,7 +1022,7 @@ GameObject:
   - component: {fileID: 790609478}
   - component: {fileID: 790609477}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: SpawnNextWaveText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1846,7 +1846,7 @@ GameObject:
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1975,7 +1975,7 @@ GameObject:
   - component: {fileID: 966081418}
   - component: {fileID: 966081417}
   m_Layer: 5
-  m_Name: Wave Nr
+  m_Name: WaveNr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2968,12 +2968,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793106345}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08054733, y: -2, z: -0.026672363}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.08054733, y: -7.1640177, z: -0.026672363}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2131613551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799274714
 GameObject:
@@ -2985,7 +2985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799274715}
   m_Layer: 0
-  m_Name: Enemy Starting Pos
+  m_Name: EnemyStartingPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3019,7 +3019,7 @@ GameObject:
   - component: {fileID: 1841124902}
   - component: {fileID: 1841124901}
   m_Layer: 5
-  m_Name: Player Health
+  m_Name: PlayerHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3226,12 +3226,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846587108}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50, y: -1.3, z: -100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -50, y: -6.464018, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2131613551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1934427165
 GameObject:
@@ -3408,7 +3408,7 @@ GameObject:
   - component: {fileID: 2074223825}
   - component: {fileID: 2074223824}
   m_Layer: 5
-  m_Name: Player Money
+  m_Name: PlayerMoney
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3627,6 +3627,40 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2131613550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131613551}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2131613551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131613550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.1640177, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1846587111}
+  - {fileID: 1793106349}
+  - {fileID: 601641962}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133385854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,7 +3776,7 @@ GameObject:
   - component: {fileID: 2145500744}
   - component: {fileID: 2145500743}
   m_Layer: 5
-  m_Name: Next Wave
+  m_Name: NextWaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3892,11 +3926,11 @@ PrefabInstance:
       objectReference: {fileID: 1841124901}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: SpawnableObjects.Array.size
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: EnemyWavesInLevel.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: SpawnableObjects.Array.data[0]
@@ -3923,8 +3957,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 506468609888630188, guid: d591e24532e55534bb2c14646b12538b, type: 3}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: SpawnableObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 5600170160763236132, guid: be43af7ecea46984b9e22b76c913d607, type: 3}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: SpawnableObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 5600170160763236132, guid: a977933a063028344b58da2a5c412ddd, type: 3}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: SpawnableObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 5600170160763236132, guid: c163935c4178ef74c9949309100984ea, type: 3}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: SpawnableObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 5600170160763236132, guid: 357130c2e738fe441af71eed2749f6e0, type: 3}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: EnemyWavesInLevel.Array.data[0].WaveKey.Array.size
-      value: 10
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[1].WaveKey.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[2].WaveKey.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[3].WaveKey.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[4].WaveKey.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: EnemyWavesInLevel.Array.data[0].WaveKey.Array.data[0]
@@ -3965,6 +4031,30 @@ PrefabInstance:
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: EnemyWavesInLevel.Array.data[0].WaveKey.Array.data[9]
       value: Wave1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[1].WaveKey.Array.data[0]
+      value: Wave2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[1].WaveKey.Array.data[1]
+      value: Wave1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[1].WaveKey.Array.data[2]
+      value: Wave1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[2].WaveKey.Array.data[0]
+      value: Wave3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[3].WaveKey.Array.data[0]
+      value: Wave4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: EnemyWavesInLevel.Array.data[4].WaveKey.Array.data[0]
+      value: Wave5
       objectReference: {fileID: 0}
     - target: {fileID: 8180859174309889466, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4018,7 +4108,7 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 467346907}
   - {fileID: 705507995}
-  - {fileID: 1793106349}
+  - {fileID: 2131613551}
   - {fileID: 1934427169}
   - {fileID: 840878100825115700}
   - {fileID: 1799274715}
@@ -4026,5 +4116,3 @@ SceneRoots:
   - {fileID: 1788954705}
   - {fileID: 1995874053}
   - {fileID: 1655097298}
-  - {fileID: 1846587111}
-  - {fileID: 601641962}

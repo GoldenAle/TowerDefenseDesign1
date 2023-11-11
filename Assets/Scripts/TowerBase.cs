@@ -101,6 +101,5 @@ public class TowerBase : MonoBehaviour
         }
         CurrentBullet = 0;
         yield return null;
-
     }
 }

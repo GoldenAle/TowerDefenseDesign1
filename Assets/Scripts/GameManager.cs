@@ -4,10 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 /*
-THE MASTER BECOMES 
-A HUMAN FURNACE
-THAT MAY SMITE 
-AND PUNISH GOD
+I have become death the destroyer of worlds
 */
 [System.Serializable]
 public class PlayerData
@@ -44,7 +41,6 @@ public class GameManager : MonoBehaviour
     [Header("Dynamic References")]
     public List<EnemyBase> AllEnemies = new List<EnemyBase>();
 
-
     private void Awake()
     {
         GlobalGameManager = this;
@@ -60,7 +56,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-
     }
     private void Update()
     {
@@ -96,7 +91,6 @@ public class GameManager : MonoBehaviour
             GO.SetActive(true);
             GO.transform.position = aPostion;
             return GO;
-            
         }
         return null;
     }
