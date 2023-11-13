@@ -37,8 +37,10 @@ public class Enemy
 
 public class EnemyWave : MonoBehaviour
 {
+    public static EnemyWave EnemyManager = null;
     public List<EnemyBase> Enemies = new List<EnemyBase>();
     public Vector3 movementDirection = Vector3.zero;
+    public Enemy CurrentEnemyData = null;
     public void Start()
     {
         var enemyComp = GetComponentsInChildren<EnemyBase>();

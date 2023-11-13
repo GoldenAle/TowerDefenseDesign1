@@ -19,8 +19,8 @@ public class TowerBuyer : MonoBehaviour
 
     private void Update() 
     { 
-        costText.text = towerBuy.TowerCost(towerNumber) + "$";
-        if (towerBuy.TowerCost(towerNumber) > GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney) 
+        costText.text = towerBuy.TowerCost() + "$";
+        if (towerBuy.TowerCost() > GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney) 
         { 
             costText.color = cantAffordColor;
         }

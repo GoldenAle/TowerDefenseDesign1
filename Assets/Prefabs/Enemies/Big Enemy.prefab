@@ -358,7 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyData:
     SpawnDelay: 0
-    MaxHealth: 10
+    MaxHealth: 40
     Damage: 3
     MoneyOnKill: 5
     MoveSpeed: 1

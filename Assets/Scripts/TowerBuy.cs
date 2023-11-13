@@ -1,23 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class TowerBuy : MonoBehaviour
 {
+    [Header("Arrays")]
     [SerializeField] GameObject[] towerBuyers;
-    [Header("Tower")]
-    [SerializeField] GameObject tower;
-    [Header("Buyer")]
+    [SerializeField] GameObject[] towers;
+    [Header("Money")]
+    [SerializeField] int cost;
+    [SerializeField] int costMultiplier = 2;
+    [Header("Objects")]
     [SerializeField] GameObject towerBuyerParent;
-    [SerializeField] int[] costs;
-    [Header("Canvas")]
     [SerializeField] GameObject towerBuyCanvas;
 
     bool inBuyMode = false;
 
-    public int TowerCost(int costNumber) 
+    public int TowerCost() 
     { 
-        return costs[costNumber];
+        return cost;
+    }
+
+    public bool InBuyMode() 
+    { 
+        return inBuyMode;
     }
 
     private void Start()
@@ -28,12 +35,12 @@ public class TowerBuy : MonoBehaviour
 
     public void BuyTower(int towerNumber)
     {
-        if (inBuyMode && costs[towerNumber] < GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney) 
+        if (inBuyMode && cost < GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney) 
         {
-            float spawnHeight = 5.5f;
-            Instantiate(tower, new Vector3(towerBuyers[towerNumber].transform.position.x, spawnHeight, towerBuyers[towerNumber].transform.position.z), Quaternion.identity);
+            towers[towerNumber].SetActive(true);
             Destroy(towerBuyers[towerNumber]);
-            GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney -= costs[towerNumber];
+            GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney -= cost;
+            cost *= costMultiplier;
         }
     }
 

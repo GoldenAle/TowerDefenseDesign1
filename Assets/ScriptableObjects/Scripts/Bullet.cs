@@ -36,5 +36,17 @@ public class Bullet
     {
 
     }
-
 }
+
+public class Test : MonoBehaviour 
+{
+    public static Test test = null;
+
+    public Bullet CurrentBulletData = null;
+
+    private void Awake()
+    {
+        test = this;
+    }
+}
+
